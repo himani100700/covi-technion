@@ -1,0 +1,36 @@
+* {
+    font-family: arial;
+}
+
+.navbar {
+    background-color: #fefeff;
+}
+
+.nav-item a {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    color: #000000;
+    border-bottom: 3px solid #fefeff;
+    margin: 10px;
+    opacity: 0.6;
+}
+
+.nav-item a:hover {
+    background-color: #fefeff;
+    color: rgb(255, 72, 0);
+    border-bottom: 3px solid rgb(255, 72, 0);
+    transition: 0.2s;
+}
+
+.nav-item a:active a.active {
+    background-color: #fefeff !important;
+    color: rgb(255, 72, 0) !important;
+    border-bottom: 3px solid rgb(255, 72, 0) !important;
+    transition: 0.2s !important;
+}
+
+.user {
+    font-size: 2rem;
+}

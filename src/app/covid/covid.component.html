@@ -1,0 +1,45 @@
+<section id="covid">
+    <div class="container table-responsive">
+        <mat-divider></mat-divider>
+        <br><br><br><br>
+        <h1><b>Covid-19 Cases </b></h1>
+        <div class="card" style="padding: 20px;">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Country</th>
+                        <th>Total Cases</th>
+                        <th>New Cases</th>
+                        <th>Total Deaths</th>
+                        <th>New Deaths</th>
+                        <th>Recovered</th>
+                        <th>Active Cases</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let data of covidata | paginate:{id:'listing_pagination',
+                    itemsPerPage:10,
+                    currentPage: page,
+                    totalItems: totalRecords}">
+                        <td>{{data.country}}</td>
+                        <td>{{data.cases}}</td>
+                        <td>{{data.todayCases}}</td>
+                        <td>{{data.deaths}}</td>
+                        <td>{{data.todayDeaths}}</td>
+                        <td>{{data.recovered}}</td>
+                        <td>{{data.active}}</td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <div style="width: fit-content;margin: auto;padding-right: 40px;">
+                <pagination-controls id="listing_pagination" maxSize="5" directionLinks="true" (pageChange)="page=$event"></pagination-controls>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<br><br>

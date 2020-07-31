@@ -1,0 +1,15 @@
+table {
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: fit-content;
+    }
+    /*1rem = 16px*/
+}

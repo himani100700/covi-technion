@@ -1,0 +1,20 @@
+.product-card {
+    width: 100%;
+}
+
+.btn01 {
+    width: 100%;
+    padding: 0;
+}
+
+button:focus,
+button:active:focus,
+button.active:focus {
+    outline: none !important;
+    outline-style: none !important;
+}
+
+tr,
+th {
+    justify-content: center;
+}

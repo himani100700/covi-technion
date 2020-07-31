@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-lg navbar-light sticky-top ">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#home">Home <span class="sr-only"></span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#products">Products</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#covid">Covid-19</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#team"> Developer Team</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+        </ul>
+
+    </div>
+    <ul class="navbar-nav">
+        <div class="row">
+            <div class="col-6 pr-0">
+                <li class="nav-item">
+                    <a class="nav-link" (click)="openDialog2()">
+                        <!-- <i class="fas fa-shopping-cart"></i> -->
+                        <span matBadge="2" matBadgeOverlap="false" matBadgeColor="warn">
+              <img src="assets/cart.svg" height="25rem">
+            </span>
+                        <!-- <span class="ml-3 cart"> My Cart</span> -->
+                    </a>
+                </li>
+            </div>
+            <div class="col-6 pl-1 pr-4">
+                <li class="nav-item">
+                    <a class="nav-link pt-1 " style="cursor: pointer;" (click)="openDialog1()">
+                        <i class="fa fa-user-circle-o  user"></i>
+                    </a>
+                </li>
+            </div>
+        </div>
+
+
+    </ul>
+</nav>
